@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
+        <!-- Optional: Favicon for different sizes -->
+    <link rel="icon" href="C:\Users\jishn\Quick access\Web Resume\Chat gpt 2\godzilla.png" type="image/png" sizes="32x32">
+    
+        <!-- For Apple Devices -->
+    <link rel="apple-touch-icon" href="C:\Users\jishn\Quick access\Web Resume\Chat gpt 2\godzilla.png" sizes="180x180">
+    
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +15,80 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
+<!-- Particle Background -->
+<div id="particles-js"></div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1 class="dynamic-gradient">Jishnu Kunal</h1>
-        <p class="tagline">Student of Mechanical Engineering</p>
-    </header>
-    
+<!-- Hero Section -->
+<header class="hero">
+    <h1 class="dynamic-gradient">Jishnu Kunal</h1>
+    <p class="tagline">Student of Mechanical Engineering</p>
+</header>
 
     <!-- Other Content Sections (About, Skills, etc.) -->
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p style="text-align: justify;">Welcome to my digital hub. I'm Jishnu, a Mechanical Engineering student dedicated to pushing the boundaries of technology and innovation. At the forefront of academic excellence, I’ve embarked on projects like designing a state-of-the-art motorcycle swing arm, pioneering advancements in metal matrix composites, and exploring the potentials of 3D printing ceramics.
-
-                Leading the Motomanipal team, I've spearheaded the development of high-performance electric bikes, setting new standards in engineering competitions. My expertise spans complex mechanical systems and the dynamic field of aerospace engineering, consistently striving to redefine the possible.
-                
-                I am also deeply invested in solving real-world engineering challenges using AI as a tool. Whether it’s leading a team or delving into research, my mission is to innovate and inspire.</p>
+            <p style="text-align: justify;">Welcome to my digital hub. I'm Jishnu, a Mechanical Engineering student pushing the boundaries of technology and innovation. At the forefront of academic excellence, I've designed a state-of-the-art motorcycle swing arm, pioneered advancements in metal matrix composites, and explored the potentials of 3D printing ceramics. Leading the Motomanipal team, I've developed high-performance electric bikes and set new standards in engineering competitions. My expertise spans complex mechanical systems and aerospace engineering. I'm also dedicated to solving real-world engineering challenges using AI as a tool. My mission is to innovate and inspire.</p>
         </div>
     </section>
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-            
             <div class="projects-grid">
+                <!-- Example Project Card -->
                 <div class="project-card">
-                    <h3>Motorcycle Geometry Design Tool</h3>
-                    <p>Using Excel, built an automation to find the ideal geometry of a motorcycle.</p>
+                    <div class="project-card-inner">
+                        <!-- Front Side -->
+                        <div class="project-card-front">
+                            <h3>Motorcycle Geometry Design Tool</h3>
+                        </div>
+                        <!-- Back Side -->
+                        <div class="project-card-back">
+                            <p>Using Excel, built an automation to find the ideal geometry of a motorcycle.</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Second Project -->
                 <div class="project-card">
-                    <h3>Fabrication of Aluminium Matrix Composite</h3>
-                    <p>Fabricated an Aluminium Matrix Silicon Carbide reinforced composite using Stir Casting.</p>
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>Fabrication of Aluminium Matrix Composite</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>Fabricated an Aluminium Matrix Silicon Carbide reinforced composite using Stir Casting.</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Third Project -->
                 <div class="project-card">
-                    <h3>2048 AI</h3>
-                    <p>Programmed the game 2048 using pygame then implemented a Q Learning Neural Network programmed to play the 2048 game.</p>
-                    <p><strong>Technologies:</strong> Python, Pygame, PyTorch</p>
-                    <a href="https://github.com/jkunalv6/2048" class="button">View on GitHub</a>
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>2048 AI</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>Programmed the game 2048 using Pygame, then implemented a Q-Learning Neural Network to play the game.</p>
+                            <p><strong>Technologies:</strong> Python, Pygame, PyTorch</p>
+                            <a href="https://github.com/jkunalv6/2048" class="button">View on GitHub</a>
+                        </div>
+                    </div>
                 </div>
+                <!-- Fourth Project -->
                 <div class="project-card">
-                    <h3>Aluminium Alloy Strength Predictor</h3>
-                    <p>A Neural Network trained to predict the strength of Aluminium Alloys.</p>
-                    <p><strong>Technologies:</strong> Python, Numpy, Pandas, PyTorch</p>
-                    <a href="https://github.com/jkunalv6/Machine-Learning" class="button">View on GitHub</a>
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <h3>Aluminium Alloy Strength Predictor</h3>
+                        </div>
+                        <div class="project-card-back">
+                            <p>A Neural Network trained to predict the strength of Aluminium Alloys.</p>
+                            <p><strong>Technologies:</strong> Python, Numpy, Pandas, PyTorch</p>
+                            <a href="https://github.com/jkunalv6/Machine-Learning" class="button">View on GitHub</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
     
     <section id="research">
         <div class="container">
@@ -72,55 +104,35 @@
         </div>
     </section>
     
-
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill-category">
-                    <h3>CAD Softwares</h3>
-                    <ul>
-                        <li>Fusion 360</li>
-                        <li>Solidworks</li>
-                        <li>Catia V5</li>
-                    </ul>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p class="description">Proficient in Python for data analysis, machine learning, and automation tasks.</p>
                 </div>
-    
-                <div class="skill-category">
-                    <h3>Simulation Tools</h3>
-                    <ul>
-                        <li>ANSYS</li>
-                        <li>Static Structural</li>
-                        <li>Explicit Dynamics</li>
-                        <li>ACP PrePost</li>
-                        <li>Fluent (CFD)</li>
-                        <li>Thermal</li>
-                    </ul>
+                <div class="skill-card">
+                    <h3>MATLAB</h3>
+                    <p class="description">Experienced in using MATLAB for numerical analysis and simulations.</p>
                 </div>
-    
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python 3</li>
-                        <li>MATLAB</li>
-                    </ul>
+                <div class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <p class="description">Experience in building models using Scikit-Learn and PyTorch.</p>
                 </div>
-    
-                <div class="skill-category">
-                    <h3>Python Libraries</h3>
-                    <ul>
-                        <li>Numpy</li>
-                        <li>Pandas</li>
-                        <li>Sci-Kit Learn</li>
-                        <li>PyTorch</li>
-                        <li>Torchmetrics</li>
-                    </ul>
+                <div class="skill-card">
+                    <h3>SolidWorks</h3>
+                    <p class="description">Expertise in 3D modeling and designing parts for manufacturing.</p>
                 </div>
-    
-                
+                <div class="skill-card">
+                    <h3>ANSYS</h3>
+                    <p class="description">Proficient in using ANSYS for finite element analysis and simulations.</p>
+                </div>
             </div>
         </div>
     </section>
+    
+    
     
 <!-- Experience Section -->
 <!-- Experience Section -->
@@ -163,7 +175,12 @@
         </div>
     </div>
 </section>
-
+<section id="download">
+    <div class="container">
+        <h2>Download My Resume</h2>
+        <a href="https://drive.google.com/file/d/10OcemLvOCS1NF68YhRKhpGPuc2rsNNK1/view?usp=drive_link" class="download-button" download>Download Resume</a>
+    </div>
+</section>
 
 <section id="contact">
     <div class="container">
@@ -184,6 +201,7 @@
         </div>
     </div>
 </section>
+
 
     
 
