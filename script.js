@@ -108,3 +108,47 @@ window.onscroll = function() {
     document.getElementById('scroll-indicator').style.background = gradient;
 };
 
+// JavaScript to detect when the user has scrolled to the bottom
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.innerHeight + window.scrollY;
+    var documentHeight = document.documentElement.scrollHeight;
+
+    if (scrollPosition >= documentHeight) {
+        document.body.classList.add('scrolled');
+    } else {
+        document.body.classList.remove('scrolled');
+    }
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const heroSection = document.querySelector('.hero');
+    const heroText = document.querySelector('.dynamic-gradient');
+    const threshold = 100; // The threshold scroll position at which zoom will start happening
+
+    let isZoomed = false;
+
+    // Function to handle the zoom effect
+    function handleZoomOnScroll() {
+        const scrollPosition = window.scrollY;  // Get the current scroll position
+
+        // Apply the zoom effect until the threshold is crossed
+        if (scrollPosition < threshold) {
+            let scale = 1 + scrollPosition / threshold * 0.3;  // Gradual zoom effect
+            heroSection.style.transform = `scale(${scale})`;  // Apply scaling on the hero section
+        } else {
+            if (!isZoomed) {
+                heroSection.classList.add('zoom');  // Finalize the zoom effect
+                isZoomed = true;
+            }
+        }
+    }
+
+    // Scroll event listener
+    window.addEventListener('scroll', handleZoomOnScroll);
+
+    // Prevent page scrolling during the zoom effect until the zoom is complete
+    window.addEventListener('wheel', function(e) {
+        if (!isZoomed) {
+            e.preventDefault();  // Prevent scroll while zooming
+        }
+    });
+});
