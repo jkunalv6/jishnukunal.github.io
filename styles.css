@@ -47,6 +47,7 @@ header.hero h1 {
     font-size: 1.2em;
     color: #ffffff;
     margin-top: 10px;
+    text-align: center;
 }
 
 
@@ -77,6 +78,7 @@ header.hero h1 {
 /* Tagline Styling */
 .tagline {
     font-size: 1.5em;
+
 }
 
 /* Dark Mode Adjustments */
