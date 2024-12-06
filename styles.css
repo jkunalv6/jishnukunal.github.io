@@ -45,7 +45,7 @@ header.hero h1 {
 /* Tagline Text Styling */
 .tagline {
     font-size: 1.2em;
-    background: #ffffff;
+    color: #ffffff;
     margin-top: 10px;
     justify-content: center ; 
 }
