@@ -78,7 +78,6 @@ header.hero h1 {
 /* Tagline Styling */
 .tagline {
     font-size: 1.5em;
-
 }
 
 /* Dark Mode Adjustments */
@@ -140,8 +139,8 @@ p {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minimum width for larger cards */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); /* Adjust minimum width for larger cards */
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -149,8 +148,8 @@ p {
 /* Individual Project Cards */
 .project-card {
     perspective: 1000px; /* Required for the 3D flip effect */
-    width: 250px; /* Adjust width */
-    height: 300px; /* Adjust height */
+    width: 220px; /* Adjust width */
+    height: 330px; /* Adjust height */
     margin: auto;
 }
 
@@ -212,7 +211,7 @@ p {
 .project-card-back .button {
     align-self: center;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-size: 1em;
     color: #ffffff;
     background-color: #34495E;
