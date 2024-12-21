@@ -139,8 +139,8 @@ p {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); /* Adjust minimum width for larger cards */
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); /* Adjust minimum width for larger cards */
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -148,8 +148,8 @@ p {
 /* Individual Project Cards */
 .project-card {
     perspective: 1000px; /* Required for the 3D flip effect */
-    width: 220px; /* Adjust width */
-    height: 330px; /* Adjust height */
+    width: 330px; /* Adjust width */
+    height: 270px; /* Adjust height */
     margin: auto;
 }
 
