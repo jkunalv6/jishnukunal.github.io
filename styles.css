@@ -270,13 +270,21 @@ p {
     outline: 3px solid #1639a0; /* Focus indicator in accent color */
 }
 .research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with dynamic column count */
-    gap: 20px;
-    margin: 0 auto; /* Center the grid itself */
-    width: 100%; /* Ensure grid fills the container */
-    max-width: 1200px; /* Limit the width for large screens */
-    padding: 0 20px; /* Padding for smaller screen sizes */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between each item */
+    margin: 0 auto; /* Center the grid */
+    width: 100%;
+    max-width: 800px; /* Optional: control maximum width */
+    padding: 20px; /* Outer padding for the container */
+    box-sizing: border-box;
+}
+
+.research-grid > * {
+    border: 2px solid #1639a0; /* Dark blue bounding box for each item */
+    border-radius: 10px; /* Optional: rounded corners */
+    padding: 20px; /* Inner spacing inside each item */
+    background-color: #ffffff; /* White background for clarity */
 }
 #research {
     background: #ffffff;
@@ -745,3 +753,4 @@ body {
     scrollbar-width: thin; /* Make the scrollbar thinner */
     scrollbar-color: #34495E #f9f9f9; /* Thumb color, Track color */
 }
+
